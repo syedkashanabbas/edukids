@@ -199,12 +199,84 @@
 </section>
 
 
+<section class="resources-section py-5">
+  <div class="container text-center">
+    <!-- Heading -->
+  
+    <h1 class="hero-heading display-4 display-md-1 fw-extrabold lh-sm">
+      Our Resources
+      </h1>
+    <p class="text-secondary mb-4">We develop their confidence to make them sharper</p>
+
+    <!-- Swiper Slider -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+            <img src="https://images.pexels.com/photos/7809122/pexels-photo-7809122.jpeg" class="card-img-top" alt="Resource 1">
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+            <img src="https://images.pexels.com/photos/7809122/pexels-photo-7809122.jpeg" class="card-img-top" alt="Resource 2">
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+            <img src="https://images.pexels.com/photos/7809122/pexels-photo-7809122.jpeg" class="card-img-top" alt="Resource 3">
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+            <img src="https://images.pexels.com/photos/7809122/pexels-photo-7809122.jpeg" class="card-img-top" alt="Resource 4">
+          </div>
+        </div>
+         
+      </div>
+
+      <!-- Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
 
   <!-- Bootstrap 5 JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>4
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
+  
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      576: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      992: { slidesPerView: 4 }
+    }
+  });
+</script>
 </body>
 </html>
