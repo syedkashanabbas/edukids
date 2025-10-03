@@ -96,3 +96,20 @@ gsap.from("#student-img", {
   duration: 1,
   ease: "power3.out",
 });
+
+
+  gsap.from("#quiz-img", {
+    scrollTrigger: "#quiz-img",
+    x: -100,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  });
+
+  gsap.from("#quiz-text", {
+    scrollTrigger: "#quiz-text",
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  });
