@@ -1,0 +1,82 @@
+/* Default Styles */
+
+:root {
+  /* Primary */
+  --bright-blue: #3B82F6; /* or #2196F3 */
+  --warm-yellow: #FACC15; /* or #FFC107 */
+  --playful-green: #22C55E; /* or #4CAF50 */
+
+  /* Secondary / Accent */
+  --accent-orange: #FB923C; /* or #FF9800 */
+  --accent-purple: #A855F7; /* or #9C27B0 */
+  --accent-pink: #F472B6;   /* or #E91E63 */
+
+  /* Neutral */
+  --neutral-white: #FFFFFF;
+  --neutral-light: #F3F4F6; /* or #EEEEEE */
+  --neutral-dark: #374151;  /* or #212121 */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+   background: var(--neutral-light);
+    color: var(--neutral-dark);
+}
+
+
+.logo {
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-heading {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -1px;
+  color: var(--bright-blue);
+}
+
+.hero-sub {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional hover effect */
+.nav-links li a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--accent-orange);
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #3B82F6; /* Bright Blue */
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+
+.ufo-img {
+  transform: rotate(-10deg);
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.15));
+  z-index: 10;
+}
+
+
+
+/* .girl-img, .boy-img {
+  filter: drop-shadow(0 12px 20px rgba(0,0,0,0.15));
+} */

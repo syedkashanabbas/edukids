@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edukids</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="text-gray-800 overflow-x-hidden">
+
+  
+  <!-- Navbar -->
+<nav class="w-full border-b border-gray-200">
+  <div class="max-w-7xl mx-auto flex items-center justify-between py-6 px-6">
+    
+    <!-- Logo -->
+    <div class="logo text-2xl font-bold text-gray-900">
+      Edukids<span class="text-orange-500">.</span>
+    </div>
+
+    <!-- Center Menu -->
+    <ul class="nav-links hidden md:flex space-x-10 font-medium text-gray-700">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Programs</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Instructor</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+
+    <!-- YouTube Link (separate on right) -->
+    <div class="hidden md:block">
+      <a href="#" class="text-red-500 font-semibold">Youtube</a>
+    </div>
+
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+<section class="hero  relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 py-24 text-center relative">
+    
+    <!-- Small UFO Emoji Style -->
+    <img src="assets/img/ufo1.png" alt="UFO" 
+         class="ufo-img absolute left-6 top-10 w-12 md:w-16 lg:w-20">
+
+    <!-- Heading + Subtext -->
+    <h1 class="hero-heading text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+      Better Future For Your <span class="text-blue-500">Kids</span>
+    </h1>
+    <p class="hero-sub mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+      Let the child be the director, and the actor in his own play
+    </p>
+
+
+
+  </div>
+</section>
+<!-- Stats Section -->
+<section class="relative  py-20">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 items-center">
+    
+    <!-- Left Image -->
+    <div class="flex justify-center md:justify-end">
+      <img src="assets/img/1.png" alt="Girl Student" class="girl-img w-60 md:w-72 lg:w-80">
+    </div>
+
+    <!-- Center Content -->
+    <div class="text-center space-y-6">
+      <!-- Button -->
+      <a href="#" class="inline-block bg-gradient-to-r from-purple-500 to-orange-400 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:opacity-90 transition">
+        Get Started
+      </a>
+
+      <!-- Main Text -->
+      <p class="text-gray-600 leading-relaxed max-w-md mx-auto">
+        We just don’t give our students only lecture but real life experiment, workshops and field experience throughout the journey !
+      </p>
+
+      <!-- Stats -->
+      <div class="mt-10 grid grid-cols-2 gap-8 justify-center">
+        <div class="text-center">
+          <div class="text-2xl font-bold text-gray-900">7.5k+</div>
+          <p class="text-gray-500 text-sm">Total active students taking gifted courses</p>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl font-bold text-green-500">50+</div>
+          <p class="text-gray-500 text-sm">Available field programs and increasing</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex justify-center md:justify-start">
+      <img src="assets/img/2.png" alt="Boy Student" class="boy-img w-60 md:w-72 lg:w-80">
+    </div>
+  </div>
+
+  <!-- Background doodles (placeholders as small svgs/divs) -->
+  <div class="absolute top-12 left-8 opacity-20">🚀</div>
+  <div class="absolute bottom-12 right-8 opacity-20">🛸</div>
+</section>
+
+
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
