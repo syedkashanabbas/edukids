@@ -1,5 +1,3 @@
-/* Keep your existing styles and add/modify these */
-
 /* Colors */
 :root {
   --bright-blue: #3B82F6;
@@ -96,4 +94,25 @@ body {
   border-radius: 50%;
   font-size: 14px;
   line-height: 1;
+}
+
+/* Program Card */
+
+.programs-box {
+  background: linear-gradient(135deg, #1e1b4b, #312e81);
+}
+
+.program-card {
+  /* transition: all 0.3s ease; */
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.program-card:hover {
+  /* transform: translateY(-6px); */
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.active-card {
+  background: var(--bright-blue) !important;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.5);
 }
