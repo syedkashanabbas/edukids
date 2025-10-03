@@ -1,116 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Edukids</title>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="text-gray-800 overflow-x-hidden">
+<body class="text-dark overflow-hidden ">
 
-  
-  <!-- Navbar -->
-<nav class="w-full border-b border-gray-200">
-  <div class="max-w-7xl mx-auto flex items-center justify-between py-6 px-6">
-    
-    <!-- Logo -->
-    <div class="logo text-2xl font-bold text-gray-900">
-      Edukids<span class="text-orange-500">.</span>
+
+  <nav class="w-100 border-bottom border-secondary">
+    <div class="container d-flex justify-content-between align-items-center py-3 px-3 px-md-0">
+      <!-- Logo -->
+      <div class="logo fs-3 fw-bold text-dark">
+        Edukids<span class="text-orange">.</span>
+      </div>
+
+      <!-- Center Menu -->
+      <ul class="nav d-none d-md-flex gap-4 fw-medium text-secondary">
+        <li class="nav-item"><a href="#" class="nav-link px-0 text-secondary">About Us</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-0 text-secondary">Programs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-0 text-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-0 text-secondary">Instructor</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-0 text-secondary">Blog</a></li>
+      </ul>
+
+      <!-- YouTube Link -->
+      <div class="d-none d-md-block">
+        <a href="#" class="text-danger fw-semibold text-decoration-none">Youtube</a>
+      </div>
     </div>
+  </nav>
 
-    <!-- Center Menu -->
-    <ul class="nav-links hidden md:flex space-x-10 font-medium text-gray-700">
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Programs</a></li>
-      <li><a href="#">Pricing</a></li>
-      <li><a href="#">Instructor</a></li>
-      <li><a href="#">Blog</a></li>
-    </ul>
+  <!-- Hero + Stats Combined Section -->
+  <section class="hero position-relative overflow-hidden">
+    <div class="container py-5 text-center position-relative px-3 px-md-0">
 
-    <!-- YouTube Link (separate on right) -->
-    <div class="hidden md:block">
-      <a href="#" class="text-red-500 font-semibold">Youtube</a>
-    </div>
+      <!-- Small UFO Decorative -->
+      <img src="assets/img/ufo1.png" alt="UFO" class="ufo-img position-absolute" style="left: 1.5rem; top: 2.5rem; width: 4rem; max-width: 4rem;" />
 
-  </div>
-</nav>
-
-
-  <!-- Hero Section -->
-<section class="hero  relative overflow-hidden">
-  <div class="max-w-7xl mx-auto px-6 py-24 text-center relative">
-    
-    <!-- Small UFO Emoji Style -->
-    <img src="assets/img/ufo1.png" alt="UFO" 
-         class="ufo-img absolute left-6 top-10 w-12 md:w-16 lg:w-20">
-
-    <!-- Heading + Subtext -->
-    <h1 class="hero-heading text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-      Better Future For Your <span class="text-blue-500">Kids</span>
-    </h1>
-    <p class="hero-sub mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-      Let the child be the director, and the actor in his own play
-    </p>
-
-
-
-  </div>
-</section>
-<!-- Stats Section -->
-<section class="relative  py-20">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12 items-center">
-    
-    <!-- Left Image -->
-    <div class="flex justify-center md:justify-end">
-      <img src="assets/img/1.png" alt="Girl Student" class="girl-img w-60 md:w-72 lg:w-80">
-    </div>
-
-    <!-- Center Content -->
-    <div class="text-center space-y-6">
-      <!-- Button -->
-      <a href="#" class="inline-block bg-gradient-to-r from-purple-500 to-orange-400 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:opacity-90 transition">
-        Get Started
+      <!-- Hero Heading -->
+      <h1 class="hero-heading display-4 display-md-1 fw-extrabold lh-sm">
+        Better Future For Your <span class="text-primary">Kids</span>
+      </h1>
+      <p class="hero-sub mt-3 fs-5 text-secondary mx-auto" style="max-width: 40rem;">
+        Let the child be the director, and the actor in his own play
+      </p>
+      <a href="#" class="cta-btn mt-3 d-inline-flex align-items-center justify-content-center gap-2 text-white text-decoration-none">
+        Get Started <span class="arrow">➜</span>
       </a>
 
-      <!-- Main Text -->
-      <p class="text-gray-600 leading-relaxed max-w-md mx-auto">
-        We just don’t give our students only lecture but real life experiment, workshops and field experience throughout the journey !
-      </p>
+      <!-- Stats & Images Row -->
+      <div class="row mt-5 align-items-center g-4">
 
-      <!-- Stats -->
-      <div class="mt-10 grid grid-cols-2 gap-8 justify-center">
-        <div class="text-center">
-          <div class="text-2xl font-bold text-gray-900">7.5k+</div>
-          <p class="text-gray-500 text-sm">Total active students taking gifted courses</p>
+        <!-- Left Image -->
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end">
+          <img src="assets/img/1.png" alt="Girl Student" class="girl-img img-fluid" style="max-width: 18rem;" />
         </div>
-        <div class="text-center">
-          <div class="text-2xl font-bold text-green-500">50+</div>
-          <p class="text-gray-500 text-sm">Available field programs and increasing</p>
+
+        <!-- Center Content -->
+        <div class="col-md-4 text-center">
+          <p class="text-secondary fs-6 mx-auto" style="max-width: 28rem;">
+            We just don’t give our students only lecture but real life experiment, workshops and field experience throughout the journey!
+          </p>
+
+          <!-- Stats -->
+          <div class="row mt-4 justify-content-center g-3">
+            <div class="col-6 text-center">
+              <div class="fs-3 fw-bold text-dark">7.5k+</div>
+              <p class="text-secondary small">Total active students taking gifted courses</p>
+            </div>
+            <div class="col-6 text-center">
+              <div class="fs-3 fw-bold text-success">50+</div>
+              <p class="text-secondary small">Available field programs and increasing</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-start">
+          <img src="assets/img/2.png" alt="Boy Student" class="boy-img img-fluid" style="max-width: 18rem;" />
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Right Image -->
-    <div class="flex justify-center md:justify-start">
-      <img src="assets/img/2.png" alt="Boy Student" class="boy-img w-60 md:w-72 lg:w-80">
-    </div>
-  </div>
-
-  <!-- Background doodles (placeholders as small svgs/divs) -->
-  <div class="absolute top-12 left-8 opacity-20">🚀</div>
-  <div class="absolute bottom-12 right-8 opacity-20">🛸</div>
-</section>
-
-
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

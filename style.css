@@ -1,28 +1,24 @@
-/* Default Styles */
+/* Keep your existing styles and add/modify these */
 
+/* Colors */
 :root {
-  /* Primary */
-  --bright-blue: #3B82F6; /* or #2196F3 */
-  --warm-yellow: #FACC15; /* or #FFC107 */
-  --playful-green: #22C55E; /* or #4CAF50 */
-
-  /* Secondary / Accent */
-  --accent-orange: #FB923C; /* or #FF9800 */
-  --accent-purple: #A855F7; /* or #9C27B0 */
-  --accent-pink: #F472B6;   /* or #E91E63 */
-
-  /* Neutral */
+  --bright-blue: #3B82F6;
+  --warm-yellow: #FACC15;
+  --playful-green: #22C55E;
+  --accent-orange: #FB923C;
+  --accent-purple: #A855F7;
+  --accent-pink: #F472B6;
   --neutral-white: #FFFFFF;
-  --neutral-light: #F3F4F6; /* or #EEEEEE */
-  --neutral-dark: #374151;  /* or #212121 */
+  --neutral-light: #F3F4F6;
+  --neutral-dark: #374151;
 }
 
+/* Fonts */
 body {
   font-family: 'Poppins', sans-serif;
-   background: var(--neutral-light);
-    color: var(--neutral-dark);
+  background: var(--neutral-light);
+  color: var(--neutral-dark);
 }
-
 
 .logo {
   font-family: 'Playfair Display', serif;
@@ -31,52 +27,73 @@ body {
 .hero-heading {
   font-family: 'Playfair Display', serif;
   letter-spacing: -1px;
-  color: var(--bright-blue);
+  /* color: var(--bright-blue); */
 }
 
 .hero-sub {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Optional hover effect */
-.nav-links li a {
+/* Navbar link hover effect */
+.nav-link {
   position: relative;
   transition: color 0.3s ease;
+  color: var(--neutral-dark);
 }
 
-.nav-links li a:hover {
+.nav-link:hover {
   color: var(--accent-orange);
 }
 
-.nav-links li a::after {
+.nav-link::after {
   content: '';
   position: absolute;
   width: 0%;
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #3B82F6; /* Bright Blue */
+  background-color: var(--bright-blue);
   transition: width 0.3s ease;
 }
 
-.nav-links li a:hover::after {
+.nav-link:hover::after {
   width: 100%;
 }
 
-
+/* UFO image */
 .ufo-img {
   transform: rotate(-10deg);
-  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.15));
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.15));
   z-index: 10;
 }
 
+/* CTA Button */
+.cta-btn {
+  background: #6C3BFF;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  box-shadow: 0 6px 15px rgba(108, 59, 255, 0.3);
+  transition: all 0.3s ease;
+}
 
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(108, 59, 255, 0.4);
+  text-decoration: none;
+}
 
-/* .girl-img, .boy-img {
-  filter: drop-shadow(0 12px 20px rgba(0,0,0,0.15));
-} */
+/* Orange circle inside CTA */
+.cta-btn .arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-orange);
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 1;
+}
